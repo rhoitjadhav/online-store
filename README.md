@@ -35,12 +35,11 @@ you should see the swagger api response on browser.
 
 <http://localhost:8000/docs>
 
-## Running Unit & API Tests
+## Running Tests
 
 ```commandline
 cd src
 python test.py
-python test_apis.py
 ```
 
 ## Deployment
