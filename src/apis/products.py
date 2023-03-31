@@ -42,7 +42,7 @@ def list_products(
 
 
 @router.post("")
-def create_book(
+def create_product(
     response: Response,
     product: ProductsAddSchema,
     db: Session = Depends(get_db),
@@ -54,7 +54,7 @@ def create_book(
 
 
 @router.put("/{product_id}")
-def update_book(
+def update_product(
     response: Response,
     product_id: int,
     product: ProductsUpdateSchema,
@@ -69,7 +69,7 @@ def update_book(
 
 
 @router.delete("/{product_id}")
-def delete_book(
+def delete_product(
     response: Response,
     product_id: int,
     db: Session = Depends(get_db),
