@@ -10,6 +10,10 @@ ENV SQLALCHEMY_DATABASE_URL "sqlite:///./store.db"
 COPY ./requirements.txt /online-store/
 COPY ./src/ /online-store/src
 
+# Create static directory
+RUN mkdir -p /static
+
+
 # Installing dependencies
 RUN pip install -r /online-store/requirements.txt
 
